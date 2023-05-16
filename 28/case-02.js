@@ -1,8 +1,10 @@
 function createElement(type, height, width) {
-	const element = document.createElement(type);
+  const element = document.createElement(type || "div");
 
-	element.style.height = height;
-	element.style.width = width;
+  element.style.height = height || 100;
+  element.style.width = width || 100;
 
-	return element;
+  return element;
 }
+
+createElement();

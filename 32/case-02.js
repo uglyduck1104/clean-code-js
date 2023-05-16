@@ -7,6 +7,6 @@ if (arr.length) {
 	console.log('배열 확인');
 }
 
-if (typeof arr === 'object') {
+if (arr instanceof Array) {
 	console.log('배열 확인');
 }

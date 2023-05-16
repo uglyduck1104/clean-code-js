@@ -1,15 +1,21 @@
 function loginService(isLogin, user) {
-	if (!isLogin) {
-		if (checkToken()) {
-			if (!user.nickName) {
-				return registerUser(user);
-			} else {
-				refreshToken();
+  // Early Return
+  /*
+	함수를 미리 종료
+	사고하기 편함
+  */
+  if (!isLogin) {
+    return;
+  }
 
-				return '로그인 성공';
-			}
-		} else {
-			throw new Error('No Token');
-		}
-	}
+  if (!checkToken()) {
+    throw new Error("No Token");
+  }
+
+  if (!user.nickName) {
+    return registerUser(user);
+  }
+
+  refreshToken();
+  return "로그인 성공";
 }

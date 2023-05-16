@@ -6,16 +6,18 @@
  * 3. 가격 순 정렬
  */
 
-const price = ['2000', '1000', '3000', '5000', '4000'];
+const price = ["2000", "1000", "3000", "5000", "4000"];
+
+const suffixWon = (price) => price + '원'
 
 function getWonPrice(priceList) {
-	let temp = [];
+  let temp = [];
 
-	for (let i = 0; i < priceList.length; i++) {
-		if (priceList[i] > 1000) {
-			temp.push(priceList[i] + '원');
-		}
-	}
+  for (let i = 0; i < priceList.length; i++) {
+    if (priceList[i] > 1000) {
+      temp.push(priceList[i] + "원");
+    }
+  }
 
-	return temp;
+  return temp;
 }
