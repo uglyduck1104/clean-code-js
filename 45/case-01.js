@@ -7,11 +7,11 @@
  * 4. TypeScript => readonly
  */
 const STATUS = Object.freeze({
-	PENDING: 'PENDING',
-	SUCCESS: 'SUCCESS',
-	FAIL: 'FAIL',
-	OPTIONS: {
-		GREEN: 'GREEN',
-		RED: 'RED',
-	},
+  PENDING: "PENDING",
+  SUCCESS: "SUCCESS",
+  FAIL: "FAIL",
+  OPTIONS: {
+    GREEN: "GREEN",
+    RED: "RED",
+  },
 });

@@ -2,23 +2,20 @@
  * hasOwnProperty
  */
 function hasOwnProp(targetObj, targetProp) {
-	return Object.prototype.hasOwnProperty.call(
-		targetObj,
-		targetProp,
-	);
+  return Object.prototype.hasOwnProperty.call(targetObj, targetProp);
 }
 
 const person = {
-	name: 'hyeonseok',
+  name: "hyeonseok",
 };
 
-hasOwnProp(person, 'name');
+hasOwnProp(person, "name");
 
 const foo = {
-	hasOwnProperty: function () {
-		return 'hasOwnProperty';
-	},
-	bar: 'string',
+  hasOwnProperty: function () {
+    return "hasOwnProperty";
+  },
+  bar: "string",
 };
 
-hasOwnProp(foo, 'hasOwnProperty');
+hasOwnProp(foo, "hasOwnProperty");

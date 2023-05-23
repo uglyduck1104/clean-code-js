@@ -4,32 +4,32 @@
  */
 // 직접 접근 지양
 const model = {
-	isLogin: false,
-	isValidToken: false,
+  isLogin: false,
+  isValidToken: false,
 };
 
 // model에 대신 접근
 function setLogin(bool) {
-	model.isLogin = bool;
-	serverAPI.log(model.isLogin);
+  model.isLogin = bool;
+  serverAPI.log(model.isLogin);
 }
 
 // model에 대신 접근
 function setValidToken(bool) {
-	model.isValidToken = bool;
-	serverAPI.log(model.isValidToken);
+  model.isValidToken = bool;
+  serverAPI.log(model.isValidToken);
 }
 
 // model에 직접 접근 X
 function login() {
-	setLogin(true);
-	setValidToken(true);
+  setLogin(true);
+  setValidToken(true);
 }
 
 // model에 직접 접근 X
 function logout() {
-	setLogin(false);
-	setValidToken(false);
+  setLogin(false);
+  setValidToken(false);
 }
 
-someElement.addEventListener('click', login);
+someElement.addEventListener("click", login);

@@ -7,14 +7,14 @@
  * 2. JS 빌트인 객체를 건들지말자
  */
 class Car {
-	constructor(name, brand) {
-		this.name = name;
-		this.brand = brand;
-	}
+  constructor(name, brand) {
+    this.name = name;
+    this.brand = brand;
+  }
 
-	sayName() {
-		return this.brand + '-' + this.name;
-	}
+  sayName() {
+    return this.brand + "-" + this.name;
+  }
 }
 
-const casper = new Car('캐스퍼', '현대');
+const casper = new Car("캐스퍼", "현대");
