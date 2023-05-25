@@ -3,22 +3,22 @@
  */
 // 함수
 function func() {
-	return this;
+  return this;
 }
 
 // 객체의 메서드
 const obj = {
-	method() {
-		return this;
-	},
-	conciseMethod() {
-		return this;
-	},
+  method() {
+    return this;
+  },
+  conciseMethod() {
+    return this;
+  },
 };
 
 // 생성자 함수 (Class)
 function Func() {
-	return this;
+  return this;
 }
 
 /**
